@@ -1,0 +1,104 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Comic Sans MS', sans-serif;
+      overflow: hidden;
+      background: radial-gradient(circle at top center, #70c1ff, #2b1055);
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .main-layout {
+      /* display: flex; */
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+/* qiz container */
+    .quiz-container {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.95);
+      width: 100%;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .quiz-container h2 {
+      font-size: 2.5em;
+      color: #333;
+    }
+
+    .progress {
+      margin: 10px 0;
+      font-size: 1em;
+      color: #666;
+    }
+
+    .score {
+      margin-top: 10px;
+      font-size: 2em;
+      color: #555;
+    }
+
+    .question {
+      font-size: 2em;
+      margin: 20px 0;
+      color: #444;
+    }
+
+    .options button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 3em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #f8da62;
+      transition: 0.3s;
+    }
+
+    .options button:hover {
+      background-color: #ffaa00;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+.home{
+      position: absolute; 
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.95);
+      width: 50%;
+      max-width: 200px;
+      margin-left: 570px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      color: #444;
+      margin-bottom: 10px;
+      
+}
+
+.home a{
+    text-decoration: none;
+}

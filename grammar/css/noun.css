@@ -1,0 +1,120 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom, #8ec5fc, #e0c3fc);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin:10px;
+      font-size: 2rem;
+      color: #4b0082;
+      text-align: center;
+      animation: popIn 1s ease;
+    }
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+
+
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .common, .proper {
+      width: 450px;
+      background-color: rgb(254, 190, 190);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .common:hover, .proper:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.6);
+    }
+
+    .common img, .proper img {
+      margin-top: 0%;
+    width: 100%;
+   height: 300px; 
+  object-fit: cover; 
+  display: block;
+    }
+
+    .description {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .description h3 {
+      margin-top: 0;
+    }
+
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(255, 105, 135, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #13dcfb, #07818a);
+  box-shadow: 0 12px 25px rgba(156, 168, 246, 0.5);
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 105, 135, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 105, 135, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 105, 135, 0);
+  }
+}
+
+.home-btn {
+  animation: pulse 2.5s infinite;
+}
+
